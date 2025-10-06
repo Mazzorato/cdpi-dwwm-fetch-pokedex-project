@@ -34,6 +34,7 @@ input{
 
 
 .pokemon-item {
+    background-color: grey;
     padding: 10px;
     cursor: pointer;
     color: white;
@@ -41,12 +42,17 @@ input{
     margin-bottom: 8px;
     display: grid;
     justify-content: space-between;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "bangers";
+    font-size: 20px;
+}
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p {
-    background-color: darkslategray;
-}
+
 
 .pokemon-image{
     height: 5rem;
