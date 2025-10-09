@@ -21,8 +21,10 @@
         <section class="pokemon-list">
             <template id="template-pokemon">
                 <div class="pokemon-item">
-                    <p class="id">N°1</p>
-                    <p class="name">Bulbizarre</p>
+                    <div class="pokemon-position">
+                        <p class="id">N°1</p>
+                        <p class="name">Bulbizarre</p>
+                    </div>
                     <img class="pokemon-image" src="http://unsplash.it/100/100" alt="">
                 </div>
             </template>
@@ -35,19 +37,24 @@
                 <input type="text" placeholder="Nom du pokémon" name="pokemon_name">
             </form>
 
+            <div class="pokemon-detail-container">
 
-            <div class="pokemon-details">
-                <p>N°1</p>
-                <p>Image</p>
-                <p>Nom</p>
-                <p>Type</p>
             </div>
 
-            <div class="evolutions">
-                <p>Evolutions</p>
-                <p>1</p>
-            </div>
+            <template id="template-detail">
 
+                <div class="pokemon-details">
+                    <p class="detail-id">N°1</p>
+                    <img class="pokemon-image-detail" src="http://unsplash.it/100/100" alt="">
+                    <p class="detail-name">Nom</p>
+                    <h2 >Types</h2>
+                    <div class="detail-type">
+
+                    </div>
+                </div>
+                <p class="evolutions">evolution</p>
+                
+            </template>
         </section>
     </main>
 </body>

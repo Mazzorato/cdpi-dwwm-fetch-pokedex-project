@@ -1,77 +1,107 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
+    background-color: red;    
 }
 
 main {
-    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     height: 100vh;
-    
-}
-.pokemon-list{
-   background-color: blue;
-}
-.detail{
-    background-color: yellow;
-    
-}
-.form_pokemon {
-    width: 400px;
-    margin: auto;
 }
 
-input{
+.pokemon-list {
+    color: white;
+    margin: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+    height: 100vh;
+    font-size: 20px;
+    font-family: "bangers";
+}
+
+.form_pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
     padding: 4px 10px;
     border: 0;
     font-size: 30px;
-    background-color: rgba(70, 67, 67, 0.5)
+    background-color: rgba(70, 67, 67, 0.5);
+    width: 25rem;
+    height: 3rem;
 }
 
 
 .pokemon-item {
-    background-color: grey;
+    background-color: #2d2c2c;
     padding: 10px;
     cursor: pointer;
     color: white;
     border-radius: 6px;
-    margin-bottom: 8px;
-    display: grid;
+    margin: 35px;
+    display: flex;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
     font-family: "bangers";
     font-size: 20px;
+    align-items: center;
+    width: 45rem;
 }
+
 .bangers-regular {
-  font-family: "Bangers", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.pokemon-position {
+    display: flex;
+    gap: 1rem;
+}
 
-
-.pokemon-image{
+.pokemon-image {
     height: 5rem;
 }
 
-.evolutions{
-    display: flex;
-    flex-direction: column;
+.pokemon-image-detail {
+    height: 30rem;
 }
 
-.fa-magnifying-glass{
+.pokemon-detail-container {
+    color: white;
+    text-align: center;
+}
+
+.evolutions {
+    font-size: 3rem;
+
+}
+
+.fa-magnifying-glass {
     color: #FFFFFF;
     font-size: 25px;
-    
+
 }
 
-.form_pokemon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+.detail-name {
+  font-size: 5rem;
+}
+.type-logo {
+    width: 80px;
+    height: 80px;
+
+}
+
+h2 {
+    font-size: 25px;
 }
